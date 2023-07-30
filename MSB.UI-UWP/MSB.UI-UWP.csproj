@@ -1,0 +1,37 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras">
+
+	<!--Project properties-->
+	<PropertyGroup>
+		<TargetFramework>uap10.0.17763</TargetFramework>
+		<TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+		<RootNamespace>MSB</RootNamespace>
+		<LangVersion>latest</LangVersion>
+		<Nullable>disable</Nullable>
+		<Company>MSB Studios</Company>
+		<Authors>MSB Studios</Authors>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<AssemblyName>MSB.UI-UWP</AssemblyName>
+		<NoWarn>CS8767;NETSDK1023</NoWarn>
+	</PropertyGroup>
+	
+	<!--NuGet properties-->
+	<PropertyGroup>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<!--PackageLicenseFile>LICENSE.txt</PackageLicenseFile-->
+		<!--PackageReadmeFile>README.md</PackageReadmeFile-->
+		<Version>2.2.0</Version>
+		<PackageIcon>Icon.png</PackageIcon>
+		<PackageTags>Toolkit; Controls; .NET; UWP</PackageTags>
+		<Description>MSB.UI (Universal Windows) is a .NET library designed to provide UAP solutions.</Description>
+		<PackageProjectUrl>https://github.com/MSB-Studios/MSB.UI-Windows-Presentation</PackageProjectUrl>
+		<PackageId>MSB.UI-UWP</PackageId>
+	</PropertyGroup>
+	
+	<!--Dependencies-->
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+			<Version>6.2.12</Version>
+		</PackageReference>
+	</ItemGroup>
+</Project>
